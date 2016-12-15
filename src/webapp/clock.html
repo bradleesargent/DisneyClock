@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>clock</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
+
+        <script src="js/clock.js"></script> 
+        <link rel="stylesheet" href="css/clock.css">
+    </head>
+    <body>
+        <div   style="width: 100%; overflow: hidden;">
+        <div style="width: 50%; float: left;">
+            <div id="clock">
+                <div id="hour" style="transform: rotate(334.5deg);">
+                    <img src="images/hourhand.png"/>
+                </div>
+                <div id="minute" style="transform: rotate(54deg);">
+                    <img src="images/minhand.png"/>
+                </div>
+                <div id="second" style="transform: rotate(108deg);">
+                    <img src="images/sechand.png"/>
+                </div>
+            </div>
+            </div>
+            
+            <div   style="margin-left: 50%;">
+            <table border="1">
+            <tr>
+            <th>Item</th>
+            <th>Value</th>
+            </tr>
+            <tr>
+            <td>
+            Hours:</td><td>
+                <input type="text" id="hours"/>
+                </td>
+                </tr>
+                            <tr>
+            <td>
+            Minutes:</td><td>
+                <input type="text" id="minutes"/>
+                </td>
+                </tr>
+            <tr>
+            <td>
+            Seconds:</td><td>
+                <input type="text" id="seconds"/>
+                </td>
+                </tr>
+            <tr>
+            <th>Item</th>
+            <th>Degrees</th>
+            </tr>
+            <tr>
+            <td>
+            Hour Angle:</td><td>
+                <input type="text" id="hourAngle"/>
+                </td>
+                </tr>
+
+            <tr>
+            <td>
+            Minute Angle:</td><td>
+                <input type="text" id="minuteAngle"/>
+                </td>
+                </tr>
+            <tr>
+            <td>
+            Second Angle:</td><td>
+                <input type="text" id="secondAngle"/>
+                </td>
+                </tr>
+                
+                   <tr>
+            <td>
+             Angle between minute and hour hands of clock</td><td>
+                <input type="text" id="betweenMinuteAndHour"/>
+                </td>
+                </tr>
+       
+       
+
+                   <tr>
+            <td>
+             Angle between minute and second hands of clock</td><td>
+                <input type="text" id="betweenMinuteAndSecond"/>
+                </td>
+                </tr>
+                
+                
+                   <tr>
+            <td>
+             Angle between hour and second second of clock</td><td>
+                <input type="text" id="betweenHourAndSecond"/>
+                </td>
+                </tr>
+                
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
