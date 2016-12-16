@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.disney.project</groupId>
+  <artifactId>Clock</artifactId>
+  <version>1</version>
+  <description>Project for Clock</description>
+  <packaging>war</packaging>
+  <build>
+    <sourceDirectory>src/</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>${basedir}</directory>
+        <includes>
+          <include>doit.bat</include>
+          <include>src/resources/</include>
+        </includes>
+      </resource>
+    </resources>
+    <outputDirectory>classes/</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.1.1</version>
+        <configuration>
+          <webappDirectory>
+            src/webapp/
+          </webappDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tomcat-maven-plugin</artifactId>
+                <configuration>
+                    <url>http://localhost:8080/manager/text</url>
+                    <path>/Clock</path>
+                    <username>admin</username>
+                    <password>admin</password>
+                </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

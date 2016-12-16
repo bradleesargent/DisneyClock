@@ -61,12 +61,39 @@
    <value n="defaultPackage" v="com.disney.project"/>
    <hash n="oracle.ide.model.ResourcePaths">
       <hash n="resourcesContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+doit.bat"/>
+                  <string v="+src/resources/"/>
+               </list>
+               <list n="url-path">
+                  <url path="."/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/scripts/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+pom.xml"/>
+               </list>
+               <list n="url-path">
+                  <url path="."/>
+               </list>
+            </hash>
+         </list>
          <list n="pattern-filters">
+            <string v="+doit.bat"/>
+            <string v="+pom.xml"/>
             <string v="+src/resources/"/>
          </list>
-         <list n="url-path">
-            <url path="."/>
-         </list>
+         <list n="url-path"/>
       </hash>
    </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
@@ -75,6 +102,7 @@
          <string v="Database-Modeling"/>
          <string v="HTML"/>
          <string v="JAVASCRIPT"/>
+         <string v="Maven"/>
          <string v="XML"/>
       </list>
    </hash>
@@ -162,6 +190,9 @@
       <list n="profileList">
          <string v="clock"/>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <hash n="webContentSet">
